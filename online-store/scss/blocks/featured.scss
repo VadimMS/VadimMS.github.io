@@ -1,0 +1,127 @@
+.featured {
+    margin: 100px 0 90px 0;
+
+    .featured__title {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 2.6px;
+        color: $dark-gray;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .featured__categories {
+        margin: 50px 0 60px 0;
+    }
+
+    .featured__block {
+        display: flex;
+        justify-content: space-between;
+
+        .featured__element {
+            flex-basis: 23%;
+
+            img {
+                max-width: 100%;
+                display: block;
+                margin: 0 auto 25px;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 17px;
+                margin: 7px 0;
+
+                a {
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 17px;
+                    text-decoration: none;
+                    color: $new-bg;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .featured__brand {
+                font-weight: 400;
+                color: $brand-color;
+            }
+
+            .featured__price {
+                font-weight: 700;
+
+                span {
+                    font-weight: 400;
+                    margin-right: 10px;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+
+    .featured__btn {
+        $values: (bg: transparent, fz: 12px, lh: 20px, ls: 0.6px, br: 60px, w: 175px, clr: $new-bg);
+        @include btn($values...) {
+            border: 2px solid #d9c8aa;
+            padding: 18px 0;
+            margin: 45px auto;
+        }
+
+        &:hover {
+            background-color: lighten($dark-gray, 60%);
+            color: $white;
+            border-color: transparent;
+          }
+    }
+
+    .owl-nav {
+            
+        button.owl-prev, button.owl-next {
+            background: url('../images/sprite-arrow2.png') 0 0 no-repeat;
+            width: 49px;
+            height: 49px;
+            border: none;
+            box-shadow: none;
+            position: absolute;
+            left: calc(-49px - 20px);
+            top: calc(50% - 49px);
+            cursor: pointer;
+            transform: translateY(-50%);
+            outline: none;
+        }
+
+        button.owl-prev {
+
+            &:hover {
+                background-position: 0 -49px;
+            }
+        }
+
+        button.owl-next {
+            background-position: -49px 0;
+            left: auto;
+            right: calc(-49px - 20px);
+
+            &:hover {
+                background-position: -49px -49px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1350px) {
+    .featured {
+        width: calc(100% - 120px);
+        margin: 90px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured {
+        margin: 25px auto;
+    }
+}

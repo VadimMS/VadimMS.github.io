@@ -1,0 +1,259 @@
+.offers {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 25px;
+
+    .offers__left, .offers__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .offers__element {
+        position: relative;
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .offers__info {
+            position: absolute;
+            z-index: 1;
+            left: 30px;
+
+            p {
+                margin: 10px 0;
+            }
+
+            .offers__category {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 36px;
+                letter-spacing: 0.65px;
+                color: $offers-color;
+            }
+    
+            .offers__name {
+                font-weight: 700;
+                font-size: 19px;
+                line-height: 24px;
+                letter-spacing: 1.425px;
+                color: $dark-gray;
+                text-transform: uppercase;
+    
+            }
+
+            a {
+                @include btn();
+            }
+        }
+    }
+
+    .offers__new {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 14px;
+        letter-spacing: 0.55px;
+        color: $new-color;
+        background-color: $new-bg;
+        text-transform: uppercase;
+        padding: 5px 10px;
+
+        &::before {
+            content: "";
+            border: 10px solid transparent;
+            border-left: 10px solid $new-bg;
+            position: absolute;
+            left: 0px;
+            bottom: -7px;
+        }
+    }
+
+    .offers__center {
+        margin: 0 2.5%;
+
+        .offers__element {
+
+            .offers__info {
+                top: 105px;
+            }
+        }
+    }
+
+    .offers__left {
+
+        .offers__element {
+
+            .offers__info {
+                left: 0px;
+                bottom: 20px;
+                width: 100%;
+
+                .offers__two-get {
+                    font-weight: 700;
+                    color: $dark-gray;
+                    font-size: 22px;
+                    line-height: 25px;
+                    letter-spacing: 1.65px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .offers__right {
+
+        .offers__element {
+
+            .offers__info {
+                top: 50px;
+                
+                p {
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+
+    .offers__right{
+
+        .offers__element--glasses {
+
+            .offers__info{
+                left: 0px;
+                bottom: 20px;
+                width: 100%;
+                top: auto;
+            }
+
+            p {
+                text-align: center;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 25px;
+                letter-spacing: 0.65px;
+                color: $offers-color;
+                text-transform: uppercase;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .offers {
+        flex-wrap: wrap;
+
+        .offers__left {
+            margin-left: auto;
+        }
+
+        .offers__right {
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+
+            .offers__element {
+                max-width: 371px;
+                margin: 20px 12.5px;
+                margin-left: auto;
+            }
+
+            .offers__element--glasses {
+                margin: 20px 12.5px;
+                margin-right: auto;
+
+                img {
+                    height: 260px;
+                }
+            }
+        }
+
+        .offers__center {
+            margin-right: auto;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .offers {
+
+        .offers__left {
+            flex-basis: 100%;
+            display: block;
+
+            .offers__element {
+                max-width: 277px;
+                margin: 20px auto;
+            }
+        }
+
+        .offers__center {
+            flex-basis: 100%;
+            display: block;
+
+            .offers__element {
+                max-width: 470px;
+                margin: 0px auto;
+            }
+        }
+
+        .offers__right {
+            display: block;
+            flex-direction: column;
+
+            .offers__element {
+                margin-left: 0;
+            }
+
+            .offers__element--glasses {
+                margin-right: 0;
+
+                img {
+                    height: 244px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .offers {
+        margin: 25px 0;
+
+        .offers__center {
+
+            .offers__element {
+
+                .offers__info {
+                    top: 50px;
+                }
+            }
+        }
+
+        .offers__right {
+
+            .offers__element {
+                margin: 20px auto 0px;
+
+                .offers__info {
+                    top: 15px;
+                }
+            }
+
+            .offers__element--glasses {
+
+                .offers__info {
+                    top: auto;
+                }
+            }
+        }
+    }
+}
