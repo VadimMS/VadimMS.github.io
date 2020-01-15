@@ -1,0 +1,499 @@
+@media (max-width: 900px) {
+	.monitor__img img{
+		display: none;
+	}
+		}
+@media (max-width: 850px) {
+	.slider__text{
+		padding: 0 35px;
+}
+}
+@media (max-width: 800px) {
+	.tabs__wrapper .tab{
+		letter-spacing: 2px;
+}
+}
+@media (max-width: 786px) {
+	.portfolio__text {
+   		text-align: left;
+}
+	.portfolio__btn button{
+		letter-spacing: 5px;
+		margin: 0px 10px;
+}
+}
+@media (max-width: 768px) {
+	.menu ul{
+		display: none;
+		position: absolute;
+		top: 75px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		background-color: #ccc;
+	}
+	.menu li{
+		display: block;
+	}
+	.menu li + li{
+		padding-left: 0;
+	}
+	.menu a{
+		display: block;
+		padding: 5px 0;
+	}
+	.menu__btn{
+		display: block;
+	}
+	.about__text{
+		column-count: 1;
+		column-gap: 0px;
+	}
+	.about__photo-position{
+		margin-bottom: 15px;
+	}
+	.tabs__wrapper .tab::before{
+		top: 35px;
+		font-size: 35px;
+	}
+	.portfolio__container a{
+		width: 50%;
+	}
+		.slider__text{
+		padding: 0 60px;
+}
+		.news {
+    	padding-top: 45px;
+    	padding-bottom: 40px;
+}
+	.news__title {
+    	padding-bottom: 35px;
+}
+	.news__title-link{
+		font-size: 9px;	
+	}
+	.pt3{
+		padding-top: 30px;
+	}
+}
+@media (max-width: 719px) {
+	.tabs__wrapper .tab{
+		letter-spacing: 1px;
+}
+}
+@media (max-width: 682px) {
+	.top__title{
+		letter-spacing: 20px;
+}
+	.about{
+		padding-top: 25px;
+		padding-bottom: 25px
+	}
+	.about__title{
+		margin-bottom: 30px;
+	}
+	.about__photo{
+		margin-top: 30px;
+	}
+	.services {
+    	padding-top: 40px;
+    	padding-bottom: 40px;
+}
+	.services__title{
+		margin-bottom: 20px;
+	}
+	.tabs__wrapper .tab{
+		letter-spacing: 0px;
+}
+	.tabs{
+		padding-bottom: 40px;
+	}
+	.about__prew-text{
+		margin-bottom: 0px;
+	}
+	.about__text{
+		padding-top: 15px;
+	}
+	.monitor__wrapper {
+   		 padding-top: 40px;
+   		 padding-bottom: 40px;
+}
+	.portfolio__title{
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	.portfolio__btn{
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+	.portfolio__btn button {
+    	letter-spacing: 2px;
+    	margin: 0px 0px;
+}
+	.locw__wrapper{
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	.why_choose_use {
+    	padding-top: 40px;
+    	padding-bottom: 45px;
+}
+	.icons{
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	.icon__title{
+		margin-bottom: 10px;
+	}
+	.slider{
+		padding: 40px 0;
+	}
+	.pt2{
+		padding-top: 30px;
+	}
+	.email{
+		padding: 40px 0;
+	}
+	.contact{
+		padding: 30px 0px 40px;
+	}
+	.contact__title{
+		margin-bottom: 10px;
+	}
+	.contact__info{
+		margin-bottom: 35px;
+	}
+	.contact__info-item {
+    	width: 100%;
+    	float: none;
+    	text-align: center;
+    	padding-top: 15px;
+}
+	.info-item{
+		display: inline-block;
+		padding-left: 0px;
+	}
+	.info-item span{
+		font-size: 15px;
+		text-decoration: underline;
+	}
+	.c1::before{
+		top: 26px;
+		left: -68px;
+	}
+	.c1::after{
+		left: -62px;
+		top: 25px;
+	}
+	.c2::before{
+		top: 26px;
+		left: -48px;
+	}
+	.contact__info-item:nth-child(2) .c2::after{
+		left: -40px;
+		top: 26px;
+	}
+	.c3::before{
+		top: 26px;
+		left: -42px;
+	}
+	.contact__info-item:nth-child(3) .c3::after{
+		left: -38px;
+		top: 26px;
+	}
+	.map iframe{
+		height: 200px;
+	}
+	.map__bg.active{
+		top: 200px;
+		bottom: -25px;
+	}
+	.map__bg.active span {
+    	top: 50%;
+}	
+	.map__bg.active .google{
+		display: none;
+	}
+	.footer{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.footer__logo {
+    	padding-bottom: 25px;
+}
+	.footer__icons-inner .footer__icons {
+    	padding-bottom: 50px;
+}
+	.up{
+		right: 20px;
+		bottom: 10px;
+	}
+}
+@media (max-width: 610px) {
+	.tabs__wrapper .tab{
+		font-size: 11px;
+	}
+	.services__title{
+		font-size: 15px;
+		margin-bottom: 0px;
+	}
+	.tabs__wrapper .tab::before {
+   		top: 50px;
+    	font-size: 30px;
+}
+	.about__prew-text{
+		font-size: 22px;
+	}
+}
+@media (max-width: 520px) {
+	.top__title{
+		padding: 0px 40px;
+		line-height: 35px;
+		margin-bottom: 45px;
+		font-size: 25px;
+		letter-spacing: 15px;
+	}
+	.top__text{
+		padding: 0 86px;
+		font-size: 17px;
+}
+	.about__photo img{
+		margin-bottom: 5px;
+	}
+	.about__photo-position{
+		margin-bottom: 10px;
+		margin-top: 0px;
+	}
+	.news__title-text{
+		letter-spacing: 4px;
+	}
+	.news__title-link{
+		letter-spacing: 1px
+	}
+}
+@media (max-width: 480px) {
+		.slider__text{
+		padding: 0 35px;
+}
+}
+@media (max-width: 461px) {
+	.tabs__wrapper .tab{
+		float: none;
+		width: 86%;
+		letter-spacing: 3px;
+	}
+	.tabs__wrapper .tab::before{
+		top: 0px;
+		font-size: 20px;
+		left: -180px;
+	}
+	.tab{
+		padding-top: 1px;
+	}
+	.tabs{
+		padding-bottom: 30px;
+		padding-top: 30px;
+		padding-left: 50px;
+	}
+	.about__prew-text{
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.email-left, .email-right{
+		float: none;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.email__form input[type="submit"]{
+		float: none;
+		padding: 5px 102px;
+	}
+	.email-left input{
+		display: inline-block;
+	}
+	.email__text{
+		font-size: 10px;
+	}
+	.email__text::before{
+		left: 100px;
+	}
+	}
+@media (max-width: 455px) {
+	.email__text::before{
+		left: 95px;
+	}
+	}
+@media (max-width: 444px) {
+	.services__title {
+    	margin-bottom: 0px;
+	}
+	.tabs{
+		padding-bottom: 40px
+	}
+	.email__text::before{
+		left: 90px;
+	}
+	.form-left, .form-right{
+		float: none;
+		width: 100%;
+	}
+	.form-left {
+    	padding-right: 0;
+    }
+	.form-right{
+		padding-left: 0px;
+	}
+	.form-text{
+		font-size: 10px;
+	}
+	.contact__form input[type="submit"]{
+		font-size: 11px;
+	}
+    }
+@media (max-width: 434px) {
+	.email__text::before{
+		left: 85px;
+	}
+    }
+@media (max-width: 424px) {
+	.email__text::before{
+		left: 80px;
+	}
+    }
+@media (max-width: 414px) {
+	.portfolio__container a{
+		width: 100%;
+	}
+	.portfolio__btn {
+		margin-top: 20px;
+   		margin-bottom: 20px;
+}
+	.portfolio__btn button{
+		width: 100%;
+	}
+	.news__title-text{
+		letter-spacing: 1px;
+	}
+	.news__title-link{
+		letter-spacing: 0px;
+		font-size: 8px;
+	}
+	.email__text::before{
+		left: 75px;
+	}
+}
+@media (max-width: 404px) {
+		.email__text::before{
+		left: 70px;
+	}
+}
+@media (max-width: 394px) {
+		.email__text::before{
+		left: 65px;
+	}
+}
+@media (max-width: 382px) {
+	.top__text{
+		padding: 0 54px;
+}
+		.email__text::before{
+		left: 60px;
+	}
+}
+@media (max-width: 372px) {
+		.email__text::before{
+		left: 55px;
+	}
+}
+@media (max-width: 362px) {
+		.email__text::before{
+		left: 50px;
+	}
+	.contact__form input[type="submit"]{
+		font-size: 10px;
+		padding: 5px 7px;
+	}
+}
+@media (max-width: 352px) {
+		.email__text::before{
+		left: 45px;
+	}
+}
+@media (max-width: 342px) {
+		.email__text::before{
+		left: 40px;
+	}
+}
+@media (max-width: 332px) {
+		.email__position{
+		padding-bottom: 5px;	
+		}
+		.email-left input{
+		width: 200px
+		}
+		.email__form input[type="submit"]{
+		padding: 5px 58px;
+	}
+		.email__text::before{
+		left: 35px;
+	}
+		.email__title{
+		margin-bottom: 10px;
+		}
+}
+@media (max-width: 322px) {
+	.email__text::before{
+		left: 30px;
+	}
+}
+@media (max-width: 318px) {
+	.top__text{
+		padding: 0 34px;
+}
+	.news__title-text {
+    letter-spacing: 0px;
+}
+}
+@media (max-width: 312px) {
+	.email__text::before{
+		left: 25px;
+	}
+}
+@media (max-width: 302px) {
+	.email__text::before{
+		left: 20px;
+	}
+	.form-text {
+    	font-size: 9px;
+}
+	.info-item{
+		font-size: 12px;
+	}
+	.c1::before{
+		left: -62px;
+	}
+	.c1::after {
+    	left: -56px;
+    	top: 25px;
+}
+}
+@media (max-width: 292px) {
+	.email__text::before{
+		left: 15px;
+	}
+}
+@media (max-width: 282px) {
+	.email__text::before{
+		left: 10px;
+	}
+}
+@media (max-width: 280px) {
+	.up{
+		right: 125px;
+		bottom: 5px;
+	}
+@media (min-width: 768px) {
+	.menu ul{
+		display: block !important;
+}
+}
