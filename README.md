@@ -4,7 +4,7 @@ http://wdr-js.web.app
 
 http://photograps-social.web.app
 
-http://https://video-playerwdr.web.app/
+https://video-playerwdr.web.app
 
 http://news-83295.web.app
 
