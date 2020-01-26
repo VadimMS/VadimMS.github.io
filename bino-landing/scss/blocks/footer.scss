@@ -1,0 +1,43 @@
+.footer {
+    background-color: $service-bg;
+    padding: 35px 0;
+
+    .footer__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .footer__right {
+
+            p {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                color: $gray;
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .footer {
+
+        .footer__wrap {
+            justify-content: center;
+            text-align: center;
+
+            .footer__left {
+                flex-basis: 100%;
+
+                .footer__socials {
+                    justify-content: center;
+                    margin: 0 10px 10px 10px;
+                }
+            }
+
+            .footer__right {
+                flex-basis: 100%;
+            }
+        }
+    }
+}

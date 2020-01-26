@@ -1,0 +1,195 @@
+.keep {
+    padding: 140px 0;
+    background-color: $white-gray;
+
+    .keep__wrap {
+
+        p {
+            font-size: 14px;
+            line-height: 29px;
+            color: $gray;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .keep__devider {
+            @include devider();
+        }
+    
+        .keep__title {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            letter-spacing: 3.6px;
+            color: $advantages-gray;
+            text-transform: uppercase;
+            line-height: 36px;
+            margin-bottom: -5px;
+        }
+
+        .keep__block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 60px;
+
+            .keep__left {
+                flex-basis: 40.8%;
+                background-color: $white;
+                box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+                border-radius: 2px/5px;
+                padding: 30px 95px 30px 90px;
+                box-sizing: border-box;
+
+                .keep__info {
+                    margin: 55px 0;
+
+                    p {
+                        text-align: left;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: $gray;
+                        font-weight: 400;
+                        margin: 20px 0;
+
+                        a {
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: $gray;
+                            text-decoration: none; 
+                        }
+
+                        &:first-child {
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 24px;
+                            color: $red;
+                        }
+                    }
+                }
+            }
+
+            .keep__right {
+                flex-basis: 56.8%;
+                background-color: $white;
+                box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+                border-radius: 3px/5px;
+                padding: 0 95px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .keep__form {
+                    flex-basis: 100%;
+
+                    .keep__input, .keep__textarea {
+                        margin: 20px 0;
+                        position: relative;
+
+                        input, textarea {
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: $gray;
+                            width: 100%;
+                            border: none;
+                            border-bottom: 1px solid $advantages-border-gray;
+                            padding: 7px;
+                            box-shadow: none;
+
+                            &:focus + label, &:valid + label {
+                                transform: translateY(-15px);
+                                font-size: 12px;
+                            }
+                        }
+
+                        textarea {
+                            height: 100px;
+                            resize: none;
+                            outline: none;
+                        }
+
+                        label {
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: $gray;
+                            width: 100%;
+                            position: absolute;
+                            left: 0;
+                            top: 5px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            pointer-events: none;
+                            transition-duration: 200ms;
+                        }
+                    }
+
+                    .keep__button {
+                        margin: 30px 0;
+
+                        button {
+                            @include btn() {
+                                cursor: pointer;
+                                width: 157px;
+                                padding: 14px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .keep {
+        padding: 50px 0;
+
+        .keep__wrap {
+
+            .keep__block {
+
+                .keep__left {
+                    padding: 30px;
+                }
+
+                .keep__right {
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .keep {
+        padding: 50px 0;
+
+        .keep__wrap {
+
+            .keep__block {
+                margin-top: 50px;
+
+                .keep__left {
+                    flex-basis: 100%;
+                    margin: 15px 0;
+
+                    .keep__info {
+                        margin: 25px 0;
+                    }
+                }
+
+                .keep__right {
+                    flex-basis: 100%;
+                    margin: 15px 0;
+                    padding: 30px;
+                }
+            }
+        }
+    }
+}

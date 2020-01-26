@@ -1,0 +1,51 @@
+.section-wrap {
+    position: relative;
+
+    .section-wrap__icon {
+
+        a {
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            left: 50%;
+            bottom: 8%;
+            transform: translate(-50%, 15px);
+            z-index: 2;
+            border-radius: 50%;
+            background-color: $white-gray;
+
+            &:hover {
+
+                .section-wrap__img {
+                    animation-name: rotate;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                }
+            }
+
+            &::before {
+                content: "";
+                width: 74px;
+                height: 74px;
+                position: absolute;
+                left: 50%;
+                bottom: 16%;
+                transform: translate(-50%, 15px);
+                z-index: 0;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.25);
+            }
+
+            .section-wrap__img {
+                width: 30px;
+                height: 30px;
+                fill: $red;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+    }
+}
