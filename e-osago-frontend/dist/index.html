@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<!-- Favicon -->
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+	<script src="js/libs.min.js" defer></script>  
+	<script src="js/script.min.js" defer></script>
+</head>
+
+<body>
+	<header class="header" id="header__menu">
+	    <div class="header-content">
+	        <div class="container">
+	            <div class="header__wrapper">
+	                <div class="header__logo">
+	                    <a href="/">
+	                        <img src="img/svg/logo.svg" alt="" />
+	                    </a>
+	                </div>
+	                <nav class="header__menu">
+	                    <button class="header__menu-btn"></button>
+	                    <ul class="header__menu-list">
+	                        <li>
+	                            <a href="#advantages">
+	                                <span>Наши преимущества</span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#calculator">
+	                                <span>Калькулятор ОСАГО</span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#questions">
+	                                <span>Вопросы и ответы</span>
+	                            </a>
+	                        </li>
+	                    </ul>
+	                </nav>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="header__line">
+	        <img src="img/line.png" alt="" />
+	    </div>
+	</header>
+
+	<!-- BEGIN MAIN-CONTENT -->
+	<section class="main-content">
+		<div class="container">
+			<div class="main-content__title-block">
+				<h1 class="title-main">Купить <span>ОСАГО</span> онлайн</h1>
+				<p>
+					Мы гарантируем подлинность полиса ОСАГО и его наличие в базе РСА. Введите номер автомобиля, чтобы
+					сервис заполнил данные о модификации
+				</p>
+				<form class="form-validate" id="numberAuto">
+					<div class="input-block">
+						<input class="input" id="InputNumberAuto" type="text" name="number" maxlength="13" required>
+						<label class="label">Номер автомобиля</label>
+					</div>
+					<div class="button">
+						<button type="submit">Рассчитать</button>
+					</div>
+				</form>
+			</div>
+			<div class="main-content__wrapper">
+				<div class="main-content__steps">
+					<div class="main-content__steps-item">
+						<span>.01</span>
+						<span>Введите данные авто и водителей</span>
+					</div>
+					<div class="main-content__steps-item">
+						<span>.02</span>
+						<span>Выберите лучшее предложение от страховых</span>
+					</div>
+					<div class="main-content__steps-item">
+						<span>.03</span>
+						<span>Оплатите и получите полис на email</span>
+					</div>
+				</div>
+				<div class="main-content__img">
+					<picture class="main-content__img-main-img">
+						<source media="(max-width:680px)" srcset="img/main-content-img.png">
+						<source media="(min-width:681px)" srcset="img/woman.png">
+						<img id="image-util" src="img/woman.png" alt="">
+					</picture>
+					<img class="main-content__img-hand-left" src="img/hand1.png" alt="">
+					<img class="main-content__img-laptop" src="img/laptop.png" alt="">
+					<img class="main-content__img-hand-right" src="img/hand2.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END MAIN-CONTENT -->
+
+	<!-- BEGIN PARTNERS -->
+	<section class="partners">
+		<div class="container">
+			<div class="swiper-container">
+				<div class="partners__wrapper swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="partners__img ">
+							<a href="#">
+								<img src="./img/partner-logo-1.png" alt="">
+								<img src="./img/partner-logo-1-grey.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="partners__img ">
+							<a href="#">
+								<img src="./img/partner-logo-2.png" alt="">
+								<img src="./img/partner-logo-2-grey.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="partners__img ">
+							<a href="#">
+								<img src="./img/partner-logo-3.png" alt="">
+								<img src="./img/partner-logo-3-grey.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="partners__img ">
+							<a href="#">
+								<img src="./img/partner-logo-4.png" alt="">
+								<img src="./img/partner-logo-4-grey.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="partners__img ">
+							<a href="#">
+								<img src="./img/partner-logo-5.png" alt="">
+								<img src="./img/partner-logo-5-grey.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END PARTNERS -->
+
+	<!-- BEGIN ADVANTAGES -->
+	<section class="advantages" id="advantages">
+		<div class="container">
+			<h2 class="title-content wow fadeInDown pos-sticky" data-wow-duration="1s" data-wow-offset="200">Почему
+				выбирают именно нас</h2>
+			<div class="advantages__wrapper">
+				<div class="advantages__item">
+					<div class="advantages__icon scrollme animateme" data-when="exit" data-from="0.6" data-to="0"
+						data-translatex="-590" data-translatey="20" data-easing="linear">
+						<img src="img/svg/1.svg" alt="">
+					</div>
+					<div class="advantages__info">
+						<h3>Надежно</h3>
+						<span>Мы гарантируем наличие полиса в базе РСА</span>
+					</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__icon scrollme animateme" data-when="exit" data-from="0.6" data-to="0"
+						data-translatex="-590" data-translatey="-100" data-easing="linear">
+						<img src="img/svg/2.svg" alt="">
+					</div>
+					<div class="advantages__info">
+						<h3>Выгодно</h3>
+						<span>Найдем самую низкую цену среди 10 страховых</span>
+					</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__icon scrollme animateme" data-when="exit" data-from="0.6" data-to="0"
+						data-translatex="-590" data-translatey="-200" data-easing="linear">
+						<img src="img/svg/3.svg" alt="">
+					</div>
+					<div class="advantages__info">
+						<h3>Быстро</h3>
+						<span>Оформление онлайн за 5 минут. Полис будет отправлен на ваш email</span>
+					</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__icon scrollme animateme" data-when="exit" data-from="0.6" data-to="0"
+						data-translatex="-590" data-translatey="-320" data-easing="linear">
+						<img src="img/svg/4.svg" alt="">
+					</div>
+					<div class="advantages__info">
+						<h3>Честно</h3>
+						<span>Мы не навязываем дополнительные услуги. Наша комиссия 0%.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END ADVANTAGES -->
+
+	<!-- BEGIN CALCULATOR -->
+	<section class="calculator wow slideInLeft" data-wow-duration="0.8s" data-wow-offset="400" id="calculator">
+		<div class="container">
+			<h2 class="title-main">
+				<span>E-osago.ru</span> помогает найти выгодную цену на ОСАГО у ведущих страховых
+			</h2>
+			<div class="calculator__wrapper">
+				<p class="wow fadeIn" data-wow-duration="0.4s" data-wow-delay="0.8s">
+					Онлайн-калькулятор ОСАГО рассчитывает по тарифам 2020 года точную стоимость полиса. Выберите лучшее
+					предложение и оформите полис онлайн. Страховка придет на email сразу после оплаты.
+				</p>
+				<div class="button wow fadeIn" data-wow-duration="0.3s" data-wow-delay="1.2s">
+					<button>Калькулятор ОСАГО</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END CALCULATOR -->
+
+	<!-- BEGIN QUESTIONS -->
+	<section class="questions" id="questions">
+		<div class="container">
+			<h2 class="title-content wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="300">
+				Вопросы и ответы
+			</h2>
+			<div class="questions__wrapper">
+				<div class="questions__item wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="0.2s">
+					<span class="accordion">Чем электронный полис ОСАГО отличается от бумажного?</span>
+					<div class="questions__info">
+						<span>Чтобы купить ОСАГО, понадобятся документы:</span>
+						<ul>
+							<li><span>Паспорт</span></li>
+							<li><span>Свидетельство о регистрации транспортного средства или ПТС</span></li>
+							<li><span>Водительские удостоверения водителей, которых планируете указать в полисе</span>
+							</li>
+							<li><span>Действующая диагностическая карта</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="questions__item wow fadeInUp" data-wow-delay="0.9s" data-wow-duration="0.2s">
+					<span class="accordion">Какие документы нужны для оформления электронного ОСАГО?</span>
+					<div class="questions__info">
+						<span>Чтобы купить ОСАГО, понадобятся документы:</span>
+						<ul>
+							<li><span>Паспорт</span></li>
+							<li><span>Свидетельство о регистрации транспортного средства или ПТС</span></li>
+							<li><span>Водительские удостоверения водителей, которых планируете указать в полисе</span>
+							</li>
+							<li><span>Действующая диагностическая карта</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="questions__item wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="0.2s">
+					<span class="accordion">От чего зависит стоимость электронного полиса? Как сэкономить на
+						ОСАГО?</span>
+					<div class="questions__info">
+						<span>Чтобы купить ОСАГО, понадобятся документы:</span>
+						<ul>
+							<li><span>Паспорт</span></li>
+							<li><span>Свидетельство о регистрации транспортного средства или ПТС</span></li>
+							<li><span>Водительские удостоверения водителей, которых планируете указать в полисе</span>
+							</li>
+							<li><span>Действующая диагностическая карта</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="questions__item wow fadeInUp" data-wow-delay="1.4s" data-wow-duration="0.2s">
+					<span class="accordion">Как оформить ОСАГО онлайн?</span>
+					<div class="questions__info">
+						<span>Чтобы купить ОСАГО, понадобятся документы:</span>
+						<ul>
+							<li><span>Паспорт</span></li>
+							<li><span>Свидетельство о регистрации транспортного средства или ПТС</span></li>
+							<li><span>Водительские удостоверения водителей, которых планируете указать в полисе</span>
+							</li>
+							<li><span>Действующая диагностическая карта</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END QUESTIONS -->
+
+	<!-- BEGIN FORM-BOTTOM -->
+	<section class="form-bottom">
+		<div class="container">
+			<h2 class="title-content wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="200">
+				Остались вопросы?
+			</h2>
+			<div class="form-bottom__wrapper">
+				<div class="form-bottom__form wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.65s">
+					<span>Оставьте заявку и мы Вам перезвоним</span>
+					<form class="form-validate" id="request">
+						<div class="form-bottom__inputs">
+							<div class="input-block">
+								<input class="input" id="name" type="text" name="name" required>
+								<label class="label">Ваше имя</label>
+							</div>
+							<div class="input-block">
+								<input class="input" id="phone" type="text" name="phone" required>
+								<label class="label">Номер телефона</label>
+							</div>
+						</div>
+						<div class="input-block textarea-block">
+							<textarea class="input" id="message" name="message" required></textarea>
+							<label class="label">Опишите свою проблему</label>
+						</div>
+						<div class="button">
+							<button type="submit">Перезвоните мне</button>
+						</div>
+					</form>
+				</div>
+				<div class="form-bottom__phone wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
+					<span>Наша служба поддержки всегда готова Вам помочь</span>
+					<a href="tel:88003337058"><span>8 800 333-70-58</span></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END FORM-BOTTOM -->
+
+	<footer class="footer">
+	    <div class="footer__info">
+	        <div class="container">
+	            <div class="footer__wrapper">
+	                <div class="footer__address">
+	                    <span>ООО "СВЦ ПОЛИС812" Санкт-Петербург, Стачек, дом 55</span>
+	                </div>
+	                <div class="footer__links">
+	                    <a href="#">
+	                        <span>Пользовательское соглашение</span>
+	                    </a>
+	                    <a href="#">
+	                        <span>Политика конфиденциальности</span>
+	                    </a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="footer__copyright">
+	        <span>&copy; 2020 e-osago.ru. Все права защищены</span>
+	    </div>
+	</footer>
+	<div class="menu-bg"></div>
+</body>
+
+</html>
