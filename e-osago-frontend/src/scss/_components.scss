@@ -1,0 +1,31 @@
+//jQuery Validation Plugin//
+
+//BEGIN INPUT//
+label.error {
+    color: #ef3124;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.52px;
+    transition: all 0.2s;
+    display: inline-flex;
+}
+.input-block {
+    label + label {
+        color: #ef3124;
+    }
+}
+//END INPUT//
+
+//BEGIN CHECKBOX//
+.checkbox-block {
+    label.error {
+        display: none !important;
+    }
+    .error ~ .label {
+        &::before {
+            border: 1px solid #ef3124;
+        }
+    }
+}
+//END CHECKBOX//

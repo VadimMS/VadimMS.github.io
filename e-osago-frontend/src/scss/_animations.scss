@@ -1,0 +1,30 @@
+@keyframes down-opacity {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rigth {
+    0% {
+        transform: translateX(-2000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes up-opacity {
+    0% {
+        transform: translateY(1500px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

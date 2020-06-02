@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'TTNorms';
+    src: url('../fonts/TTNorms-Regular.ttf') format('ttf'), url('../fonts/TTNorms-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'TTNorms';
+    src: url('../fonts/TTNorms-Medium.ttf') format('ttf'), url('../fonts/TTNorms-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTNorms';
+    src: url('../fonts/TTNorms-Bold.ttf') format('ttf'), url('../fonts/TTNorms-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Medium.ttf") format("ttf"), url("../fonts/Gilroy/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Medium.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
