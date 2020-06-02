@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<!-- Favicon -->
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+	<script src="js/libs.min.js" defer></script>  
+	<script src="js/script.min.js" defer></script>
+</head>
+
+<body>
+	<header class="header" id="header__menu">
+	    <div class="header-content">
+	        <div class="container">
+	            <div class="header__wrapper">
+	                <div class="header__logo">
+	                    <a href="/">
+	                        <img src="../img/svg/logo.svg" alt="" />
+	                    </a>
+	                </div>
+	                <nav class="header__menu">
+	                    <button class="header__menu-btn"></button>
+	                    <ul class="header__menu-list">
+	                        <li>
+	                            <a href="#advantages">
+	                                <span>Наши преимущества</span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#calculator">
+	                                <span>Калькулятор ОСАГО</span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#questions">
+	                                <span>Вопросы и ответы</span>
+	                            </a>
+	                        </li>
+	                    </ul>
+	                </nav>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="header__line">
+	        <img src="../img/line.png" alt="" />
+	    </div>
+	</header>
+    <div id="steps">
+        <!-- BEGIN STEP-ONE -->
+        <section class="step-one active" data-step="1">
+            <div class="container">
+                <div class="step__wrapper">
+                    <nav class="step__navigation">
+                        <a href="/"><span>Назад</span></a>
+                    </nav>
+                    <span>шаг 01</span>
+                    <h1 class="title-main">Данные авто</h1>
+                    <p>Выберите марку и модель автомобиля для быстрого расчета ОСАГО</p>
+                    <form class="step-one__form form-validate" id="step-one" data-form>
+                        <div class="step-one__inputs">
+                            <div class="input-block">
+                                <input class="input" id="brand" type="text" name="brand" required>
+                                <label class="label">Марка</label>
+                            </div>
+                            <div class="input-block">
+                                <input class="input" id="model" type="text" name="model" required>
+                                <label class="label">Модель</label>
+                            </div>
+                            <div class="input-block">
+                                <input class="input" id="year" type="text" name="year" required>
+                                <label class="label">Год выпуска</label>
+                            </div>
+                            <div class="input-block">
+                                <input class="input" id="power" type="text" name="power" data-float-num required>
+                                <label class="label">Мощность (л.с.)</label>
+                            </div>
+                        </div>
+                        <div class="input-block">
+                            <input class="input" id="city" type="text" name="city" required>
+                            <label class="label">Город регистрации собственника</label>
+                        </div>
+                        <div class="step__checkbox-wrapper">
+                            <div class="checkbox-block">
+                                <input type="checkbox" class="custom-checkbox" id="stepOneCheck" name="stepOneCheck"
+                                    required>
+                                <label class="label" for="stepOneCheck">
+                                    <span class="checkbox-text">Цель использования - <span>личная</span> (в прокат, аренду
+                                        не сдается, в качестве
+                                        такси не используется)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="step-one__form-bottom">
+                            <div class="step-one__price-wrapper">
+                                <p><span>Предварительная стоимость</span> (без учёта стажа вождения)</p>
+                                <div class="step__price"><span>от</span> <span>5 837</span> <span>₽</span></div>
+                            </div>
+                            <div class="button">
+                                <button data-step-next="2" type="submit">Продолжить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- END STEP-ONE -->
+
+        <!-- BEGIN STEP-TWO -->
+        <section class="step-two" data-step="2">
+            <div class="container">
+                <div class="step__wrapper">
+                    <nav class="step__navigation">
+                        <a href="#" data-step-prev="1"><span>Назад</span></a>
+                    </nav>
+                    <span>шаг 02</span>
+                    <h1 class="title-main">Водители</h1>
+                    <form class="step-two__form form-validate" id="step-two" data-form>
+                        <div class="switch-field">
+                            <input type="radio" class="radio-btn" id="stepTwoRadio-one" name="stepTwoswitch-one"
+                                value="Список водителей" checked />
+                            <label for="stepTwoRadio-one">Список водителей</label>
+                            <input type="radio" class="radio-btn" id="stepTwoRadio-two" name="stepTwoswitch-one"
+                                value="Без ограничений" />
+                            <label for="stepTwoRadio-two">Без ограничений</label>
+                        </div>
+                        <div class="driver-list">
+                            <div class="step-two__inputs driver-list__driver driver-list__driver_first">
+                                <span class="driver-list__number">Водитель #</span>
+                                <div class="input-block__wrapper">
+                                    <div class="input-block__item">
+                                        <div class="input-block">
+                                            <input class="input" id="fullName1" type="text" name="fullName1" required>
+                                            <label class="label">Фамилия Имя Отчество</label>
+                                        </div>
+                                        <div class="input-block">
+                                            <input class="input datepicker-here" autocomplete="off" id="dateOfBirth1" name="dateOfBirth1" type="text" readonly required>
+                                            <label class="label">Дата рождения</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-block__item">
+                                        <div class="input-block">
+                                            <input class="input" id="license1" type="text" name="license1" required>
+                                            <label class="label">ВУ</label>
+                                        </div>
+                                        <div class="input-block">
+                                            <input class="input datepicker-here" id="startDate1" name="startDate1" type="text" autocomplete="off" readonly required>
+                                            <label class="label">Дата начала стажа</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addEdit-button add-driver">
+                            <button type="button"><span>Добавить водителя</span></button>
+                        </div>
+                        <div class="step__checkbox-wrapper">
+                            <div class="checkbox-block">
+                                <input type="checkbox" class="custom-checkbox" id="stepTwoCheck" name="stepTwoCheck"
+                                    required>
+                                <label class="label" for="stepTwoCheck">
+                                    <span class="checkbox-text">Я согласен с условиями сервиса и политикой
+                                        конфиденциальности</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button type="submit" data-step-next="3">Рассчитать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- END STEP-TWO -->
+
+        <!-- BEGIN STEP-THREE -->
+        <section class="step-three" data-step="3">
+            <div class="container">
+                <div class="step__wrapper">
+                    <nav class="step__navigation">
+                        <a href="#" data-step-prev="2"><span>Назад</span></a>
+                    </nav>
+                    <span>шаг 03</span>
+                    <h1 class="title-main">Выберите страховую</h1>
+                    <p>На стоимость полиса влияет Ваш КБМ</p>
+                    <div class="step-three__present">
+                        <div class="step-three__present-logo">
+                            <img src="img/presente-logo.png" alt="">
+                        </div>
+                        <p>При покупке ОСАГО 1 месяц подписки ivi в подарок</p>
+                        <div class="step-three__present-download">
+                            <button type="button">Правила</button>
+                        </div>
+                    </div>
+                    <div class="step-three__wrapper-content">
+                        <aside>
+                            <div class="step-three__saside-wrapper">
+                                <div class="step-three__aside-item">
+                                    <div class="step-three__aside-title">
+                                        <span>Данные КБМ</span>
+                                        <div class="step-three__aside-button" data-step-prev="2">
+                                            <button type="button"></button>
+                                        </div>
+                                    </div>
+                                    <p><span>Водитель 1:</span> Александров К. П. КБМ не найден, присвоен <span>КБМ 1</span>
+                                    </p>
+                                    <span>Скидка за КБМ отстутствует</span>
+                                    <p><span>Стоимость от</span> <span>12 282</span> <span>₽</span></p>
+                                </div>
+                                <div class="step-three__aside-item">
+                                    <div class="step-three__aside-title">
+                                        <span>Данные авто</span>
+                                        <div class="step-three__aside-button" data-step-prev="1">
+                                            <button type="button"></button>
+                                        </div>
+                                    </div>
+                                    <span>Toyota Land Cruiser, 2018, 177 л.с.</span>
+                                </div>
+                                <div class="step-three__aside-item">
+                                    <div class="step-three__aside-title">
+                                        <span>Город регистрации и период страхования</span>
+                                        <div class="step-three__aside-button" data-step-prev="1">
+                                            <button type="button"></button>
+                                        </div>
+                                    </div>
+                                    <span>г. Москва, период страхования с 29.04.2020 по 28.04.2021</span>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="step-three__main-wrapper" data-form>
+                            <div class="step-three__main-item">
+                                <div class="step-three__main-logo">
+                                    <div class="step-three__main-img">
+                                        <img src="img/logo-bank-1.png" alt="">
+                                    </div>
+                                    <div class="step-three__main-bank">
+                                        <span>Альфаcтрахование</span>
+                                        <span>лиц. ОС №2496-03</span>
+                                    </div>
+                                </div>
+                                <div class="step-three__main-info">
+                                    <span><span>6</span> в вашем регионе</span>
+                                    <span><span>108</span>всего по России</span>
+                                </div>
+                                <div class="step-three__form-bottom">
+                                    <div class="step__price"><span>15 837</span> <span>₽</span></div>
+                                    <div class="button">
+                                        <button class="step-three__btn" type="submit" data-step-next="4">Оформить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-three__main-item">
+                                <div class="step-three__main-logo">
+                                    <div class="step-three__main-img">
+                                        <img src="img/logo-bank-2.png" alt="">
+                                    </div>
+                                    <div class="step-three__main-bank">
+                                        <span>Тинькофф cтрахование</span>
+                                        <span>лиц. ОС №2496-03</span>
+                                    </div>
+                                </div>
+                                <div class="step-three__main-info">
+                                    <span><span>6</span> в вашем регионе</span>
+                                    <span><span>108</span>всего по России</span>
+                                </div>
+                                <div class="step-three__form-bottom">
+                                    <div class="step__price"><span>12 837</span> <span>₽</span></div>
+                                    <div class="button">
+                                        <button class="step-three__btn" type="submit" data-step-next="4">Оформить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-three__main-item">
+                                <div class="step-three__main-logo">
+                                    <div class="step-three__main-img">
+                                        <img src="img/logo-bank-3.png" alt="">
+                                    </div>
+                                    <div class="step-three__main-bank">
+                                        <span>Ренессанс cтрахование</span>
+                                        <span>лиц. ОС №2496-03</span>
+                                    </div>
+                                </div>
+                                <div class="step-three__main-info">
+                                    <span><span>6</span> в вашем регионе</span>
+                                    <span><span>108</span>всего по России</span>
+                                </div>
+                                <div class="step-three__form-bottom">
+                                    <div class="step__price"><span>10 000</span> <span>₽</span></div>
+                                    <div class="button">
+                                        <button class="step-three__btn" type="submit" data-step-next="4">Оформить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-three__main-banner">
+                                <div class="step-three__main-info">
+                                    <span>Безопасное и надежное оформление</span>
+                                    <span>Оплата производится напрямую в страховую компанию</span>
+                                </div>
+                                <div class="button">
+                                    <button type="submit">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="step-three__main-item">
+                                <div class="step-three__main-logo">
+                                    <div class="step-three__main-img">
+                                        <img src="img/logo-bank-4.png" alt="">
+                                    </div>
+                                    <div class="step-three__main-bank">
+                                        <span>ОСК</span>
+                                        <span>лиц. ОС №2496-03</span>
+                                    </div>
+                                </div>
+                                <div class="step-three__main-info">
+                                    <span><span>6</span> в вашем регионе</span>
+                                    <span><span>108</span>всего по России</span>
+                                </div>
+                                <div class="step-three__form-bottom">
+                                    <div class="step__price"><span>15 837</span> <span>₽</span></div>
+                                    <div class="button">
+                                        <button class="step-three__btn" type="submit" data-step-next="4">Оформить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-three__main-item">
+                                <div class="step-three__main-logo">
+                                    <div class="step-three__main-img">
+                                        <img src="img/logo-bank-1.png" alt="">
+                                    </div>
+                                    <div class="step-three__main-bank">
+                                        <span>Альфаcтрахование</span>
+                                        <span>лиц. ОС №2496-03</span>
+                                    </div>
+                                </div>
+                                <div class="step-three__main-info">
+                                    <span><span>6</span> в вашем регионе</span>
+                                    <span><span>108</span>всего по России</span>
+                                </div>
+                                <div class="step-three__form-bottom">
+                                    <div class="step__price"><span>15 837</span> <span>₽</span></div>
+                                    <div class="button">
+                                        <button class="step-three__btn" type="submit" data-step-next="4">Оформить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-three__main-item">
+                                <div class="step-three__main-logo">
+                                    <div class="step-three__main-img">
+                                        <img src="img/logo-bank-2.png" alt="">
+                                    </div>
+                                    <div class="step-three__main-bank">
+                                        <span>Тинькофф cтрахование</span>
+                                        <span>лиц. ОС №2496-03</span>
+                                    </div>
+                                </div>
+                                <div class="step-three__main-info">
+                                    <span><span>6</span> в вашем регионе</span>
+                                    <span><span>108</span>всего по России</span>
+                                </div>
+                                <div class="step-three__form-bottom">
+                                    <div class="step__price"><span>12 837</span> <span>₽</span></div>
+                                    <div class="button">
+                                        <button class="step-three__btn" type="submit" data-step-next="4">Оформить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-three__main-item">
+                                <div class="step-three__main-logo">
+                                    <div class="step-three__main-img">
+                                        <img src="img/logo-bank-3.png" alt="">
+                                    </div>
+                                    <div class="step-three__main-bank">
+                                        <span>Ренессанс cтрахование</span>
+                                        <span>лиц. ОС №2496-03</span>
+                                    </div>
+                                </div>
+                                <div class="step-three__main-info">
+                                    <span><span>6</span> в вашем регионе</span>
+                                    <span><span>108</span>всего по России</span>
+                                </div>
+                                <div class="step-three__form-bottom">
+                                    <div class="step__price"><span>10 000</span> <span>₽</span></div>
+                                    <div class="button">
+                                        <button class="step-three__btn" type="submit" data-step-next="4">Оформить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-three__main-item">
+                                <div class="step-three__main-logo">
+                                    <div class="step-three__main-img">
+                                        <img src="img/logo-bank-4.png" alt="">
+                                    </div>
+                                    <div class="step-three__main-bank">
+                                        <span>ОСК</span>
+                                        <span>лиц. ОС №2496-03</span>
+                                    </div>
+                                </div>
+                                <div class="step-three__main-info">
+                                    <span><span>6</span> в вашем регионе</span>
+                                    <span><span>108</span>всего по России</span>
+                                </div>
+                                <div class="step-three__form-bottom">
+                                    <div class="step__price"><span>15 837</span> <span>₽</span></div>
+                                    <div class="button">
+                                        <button class="step-three__btn" type="submit" data-step-next="4">Оформить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END STEP-THREE -->
+
+        <!-- BEGGIN STEP-FOUR -->
+        <section class="step-four" data-step="4">
+            <div class="container">
+                <nav class="step__navigation">
+                    <a href="#" data-step-prev="3"><span>Назад</span></a>
+                </nav>
+                <h1 class="title-main">Оформление ОСАГО</h1>
+                <form class="form-validate" id="step-four" data-form data-last-form>
+                    <div class="step-four__wrapper">
+                        <div class="step-four__top">
+                            <div class="step-four__bank">
+                                <div class="step-four__logo">
+                                    <div class="step-four__img">
+                                        <img src="img/logo-bank-big.png" alt="">
+                                    </div>
+                                    <div class="step-four__info-bank">
+                                        <span>Тинькофф cтрахование</span>
+                                        <span>лиц. ОС №2496-03</span>
+                                    </div>
+                                </div>
+                                <div class="step-four__driver">
+                                    <div class="step-four__car"><span>Toyota Land Cruiser, 2018</span> <span>(1
+                                            водитель)</span></div>
+                                    <div class="addEdit-button">
+                                        <button type="button" data-step-prev="1"><span>Редактировать</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step__price"><span>5 837</span> <span>₽</span></div>
+                        </div>
+                        <div class="step-four__inputs-wrapper" id="radioBtns">
+                            <div class="step-four__inputs step-four__inputs--two-fields step-four__inputs--auxiliary-fields">
+                                <div class="input-block__item">
+                                    <div class="input-block__wrapper">
+                                        <div class="input-block">
+                                            <input class="input" id="diagnostic-map" type="text" data-number="number" name="diagnostic-map" required>
+                                            <label class="label">Диагностическая карта</label>
+                                        </div>
+                                        <div class="input-block">
+                                            <input class="input datepicker-here" id="date-action-dc" type="text" name="date-action-dc" autocomplete="off" readonly required>
+                                            <label class="label">Дата действия ДК</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-four__inputs step-four__inputs--two-fields">
+                                <div class="input-block__item">
+                                    <div class="switch-field">
+                                        <input type="radio" class="radio-btn" id="radio-one1" name="switch-one1" value="СТС"
+                                            checked />
+                                        <label for="radio-one1" id="labelSTS">СТС</label>
+                                        <input type="radio" class="radio-btn" id="radio-two1" name="switch-one1"
+                                            value="ПТС" />
+                                        <label for="radio-two1" id="labelPTS">ПТС</label>
+                                    </div>
+                                    <div class="input-block__wrapper">
+                                        <div class="input-block">
+                                            <input class="input" id="stsPts" type="text" name="stsPts" required>
+                                            <label class="label" id="labelInputNumberSTS">Номер СТС</label>
+                                        </div>
+                                        <div class="input-block">
+                                            <input class="input datepicker-here" id="dateOfIssue1" type="text" name="dateOfIssue1" autocomplete="off" readonly required>
+                                            <label class="label"> Дата выдачи </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-block__item">
+                                    <div class="switch-field">
+                                        <input type="radio" class="radio-btn" id="radio-one2" name="switch-one2" value="VIN"
+                                            checked />
+                                        <label for="radio-one2" id="labelVIN">VIN</label>
+                                        <input type="radio" class="radio-btn" id="radio-two2" name="switch-one2"
+                                            value="НЕТ VIN" />
+                                        <label for="radio-two2" id="labelNoVIN">НЕТ VIN</label>
+                                    </div>
+                                    <div class="input-block" id="BlockInputNumberVIN">
+                                        <input class="input" id="inputNumberVIN" type="text" name="vin"
+                                            required>
+                                        <label class="label">Номер VIN</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-four__inputs step-four__inputs" id="radioBtnsDrivers">
+                                <span>Собственник (Владелец)</span>
+                                <div class="radio">
+                                    <input class="custom-radio radio-btn" type="radio" id="color-1" name="color" value="yes"
+                                        checked>
+                                    <label for="color-1" class="driver">Александров К. П.</label>
+                                </div>
+                                <div class="radio">
+                                    <input class="custom-radio radio-btn" type="radio" id="color-2" name="color" value="no">
+                                    <label for="color-2" id="labelOtherDriver">Другой</label>
+                                </div>
+                                <div class="fields-util fields-util--radio">
+                                    <div class="input-block__item del">
+                                        <div class="input-block__wrapper">
+                                            <div class="input-block">
+                                                <input class="input" id="inputDriverName" type="text" name="fullName" required>
+                                                <label class="label">Фамилия Имя Отчество</label>
+                                            </div>
+                                            <div class="input-block">
+                                                <input class="input datepicker-here" id="dateOfBirth" type="text"
+                                                    name="dateOfBirth" readonly autocomplete="off" required>
+                                                <label class="label">Дата рождения</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-block__item del">
+                                        <div class="input-block__wrapper">
+                                            <div class="input-block">
+                                                <input class="input" id="passport" type="text" name="passport" required>
+                                                <label class="label">Серия и номер паспорта</label>
+                                            </div>
+                                            <div class="input-block">
+                                                <input class="input datepicker-here" id="dateOfIssue2" type="text"
+                                                    name="dateOfIssue2" readonly autocomplete="off" required>
+                                                <label class="label">Дата выдачи</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-block__item del">
+                                        <div class="input-block">
+                                            <input class="input" id="registrationAddress" type="text" name="registrationAddress"
+                                                required>
+                                            <label class="label">Адрес регистрации (город, улица,
+                                                дом, квартира)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-four__inputs">
+                                <span>Страхователь</span>
+                                <div class="step__checkbox-wrapper">
+                                    <div class="checkbox-block">
+                                        <input type="checkbox" class="custom-checkbox" id="stepFourCheck"
+                                            name="stepFourCheck">
+                                        <label class="label" for="stepFourCheck">
+                                            <span class="checkbox-text">Страхователем является собственник авто (<span
+                                                    id="driverName">Александров К. П.</span>)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="fields-util fields-util--checkbox">
+                                    <div class="input-block__item del">
+                                        <div class="input-block__wrapper">
+                                            <div class="input-block">
+                                                <input class="input" id="inputDriverName-step-4" type="text" name="fullName-step-4" required>
+                                                <label class="label">Фамилия Имя Отчество</label>
+                                            </div>
+                                            <div class="input-block">
+                                                <input class="input datepicker-here" id="dateOfBirth-step-4" type="text"
+                                                    name="dateOfBirth-step-4" readonly autocomplete="off" required>
+                                                <label class="label">Дата рождения</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-block__item del">
+                                        <div class="input-block__wrapper">
+                                            <div class="input-block">
+                                                <input class="input" id="passport-step-4" type="text" name="passport-step-4" required>
+                                                <label class="label">Серия и номер паспорта</label>
+                                            </div>
+                                            <div class="input-block">
+                                                <input class="input datepicker-here" id="dateOfIssue2-step-4" type="text"
+                                                    name="dateOfIssue2-step-4" readonly autocomplete="off" required>
+                                                <label class="label">Дата выдачи</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-block__item del">
+                                        <div class="input-block">
+                                            <input class="input" id="registrationAddress-step-4" type="text" name="registrationAddress-step-4"
+                                                required>
+                                            <label class="label">Адрес регистрации (город, улица,
+                                                дом, квартира)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-four__inputs step-four__inputs--contacts">
+                                <span>Контакты</span>
+                                <span>Будут указаны в полисе</span>
+                                <div class="input-block__item">
+                                    <div class="input-block">
+                                        <input class="input" id="email" type="email" name="email" required>
+                                        <label class="label">Email</label>
+                                    </div>
+                                    <div class="input-block">
+                                        <input class="input" id="phone" type="text" name="phone" required>
+                                        <label class="label">Номер телефона</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-four__inputs step-four__inputs--polis">
+                                <span>Дата начала действия полиса</span>
+                                <div class="input-block__item">
+                                    <div class="input-block">
+                                        <input class="input datepicker-here" id="policyStartDate" type="text"
+                                            name="policyStartDate" readonly autocomplete="off" required>
+                                        <label class="label">Дата начала действия полиса</label>
+                                    </div>
+                                    <div class="step-four__data-block">
+                                        <span>Ближайшая дата —</span> <span>27.04.2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-four__form-bottom">
+                                <div class="step-one__price-wrapper">
+                                    <p><span>Стоимость страхования</span></p>
+                                    <div class="step__price"><span>5 837</span> <span>₽</span></div>
+                                </div>
+                                <div class="button">
+                                    <button type="submit">Продолжить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- END STEP-FOUR -->
+    </div>
+
+	<footer class="footer">
+	    <div class="footer__info">
+	        <div class="container">
+	            <div class="footer__wrapper">
+	                <div class="footer__address">
+	                    <span>ООО "СВЦ ПОЛИС812" Санкт-Петербург, Стачек, дом 55</span>
+	                </div>
+	                <div class="footer__links">
+	                    <a href="#">
+	                        <span>Пользовательское соглашение</span>
+	                    </a>
+	                    <a href="#">
+	                        <span>Политика конфиденциальности</span>
+	                    </a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="footer__copyright">
+	        <span>&copy; 2020 e-osago.ru. Все права защищены</span>
+	    </div>
+	</footer>
+	<div class="menu-bg"></div>
+</body>
+
+</html>
