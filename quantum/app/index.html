@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quantum</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container__fluid">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top__inner">
+            <div class="header__top__logo">
+              <a href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="header__top__search-form">
+              <form>
+                <input type="search" placeholder="Search goods">
+                <select class="styler-select">
+                  <option value="category 1">category</option>
+                  <option value="category 2">category 2</option>
+                  <option value="category 3">category 3</option>
+                </select>
+                <button class="icon-search" type="submit"></button>
+              </form>
+            </div>
+            <div class="header__top__buttons">
+              <ul>
+                <li><button><span class="icon-basket-border"></span><span class="basket-quantity">2 </span>
+                    Items</button></li>
+                <li><button><span class="icon-heart"></span>Wish List</button></li>
+                <li><button data-fancybox data-src="#modal" href="javascript:;"><span class="icon-user"></span>Sing
+                    in</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom__inner">
+            <div class="header__bottom__left">
+              <button class="dropdown-categories"><span class="icon-burger-menu"></span>All Categories</button>
+              <ul>
+                <li><button type="button">Categories 1</button></li>
+                <li><button type="button">Categories 2</button></li>
+                <li><button type="button">Categories 3</button></li>
+              </ul>
+            </div>
+
+
+
+            <div class="header__bottom_mobile_position">
+
+            
+            <div class="header__bottom__centr">
+              <ul>
+                <li>
+                  <a href="#">Super Deals</a>
+                </li>
+                <li>
+                  <a href="#">Featured Brands</a>
+                </li>
+                <li>
+                  <a href="#">Collections</a>
+                </li>
+                <li>
+                  <a href="#">Bestselling</a>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="header__bottom__right">
+              <div class="header__bottom__right__item">
+                <button class="dropdown-help dropdown">Help<span class="icon-angle-down"></span></span></button>
+                <ul id="dropdown-1">
+                  <li><button type="button">Help 1</button></li>
+                  <li><button type="button">Help 2</button></li>
+                  <li><button type="button">Help 3</button></li>
+                </ul>
+              </div>
+              <div class="header__bottom__right__item">
+                <button class="dropdown-usd dropdown">USD<span class="icon-angle-down"></span></button>
+                <ul id="dropdown-2">
+                  <li><button type="button">USD 1</button></li>
+                  <li><button type="button">USD 2</button></li>
+                  <li><button type="button">USD 3</button></li>
+                </ul>
+              </div>
+              <div class="header__bottom__right__item">
+                <button class="dropdown-language dropdown">Language<span class="icon-angle-down"></span></span></button>
+                <ul id="dropdown-3">
+                  <li><button type="button">Language 1</button></li>
+                  <li><button type="button">Language 2</button></li>
+                  <li><button type="button">Language 3</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+
+      <div class="main__info">
+        <div class="main__info__bread-crumbs">
+          <ul>
+            <li>
+              <a href="#">Main</a>
+            </li>
+            <li>
+              <a href="#">Mobile phones</a>
+            </li>
+            <li>
+              <a href="#">Apple</a>
+            </li>
+            <li>
+              <a href="#">Apple iPhone 7, 128 GB</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main__info__share">
+          <span>Share:</span>
+          <ul>
+            <li><a class="icon-fb-color" href="#"></a><span>45</span></li>
+            <li><a class="icon-tw-color" href="#"></a><span>12</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main__title">Smartphones</div>
+
+      <div class="wrapper__main">
+
+        <button class="filters-btn">Filter</button>
+        <aside>
+          <div class="accordion__wrapper">
+            <button class="accordion">Price</button>
+            <div class="panel">
+              <div class="range-slider">
+                <input type="text" class="js-range-slider" value="" />
+              </div>
+              <div class="extra-controls">
+                <input type="text" class="js-input-from" value="0" />
+                <input type="text" class="js-input-to" value="0" />
+              </div>
+            </div>
+
+            <button class="accordion accordion__brand">Brand</button>
+            <div class="panel">
+              <div class="filters__number__wrapper">
+                <div class="filters__number__item">
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Apple">Apple</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Sony">Sony</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Asus">Asus</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="LG">LG</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Lenovo">Lenovo</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Meizu">Meizu</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Xiaomi">Xiaomi</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="HTC">HTC</label>
+                  </div>
+                </div>
+                <button id="show__more" class="filters__show-more icon-plus">SHOW MORE</button>
+              </div>
+            </div>
+            <button class="accordion accordion__color">Color</button>
+            <div class="panel">
+              <div class="filters__number__wrapper">
+                <div class="filters__number__item">
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Ivory">Ivory</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Deep Grey">Deep Grey</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Coffee">Coffee</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Red">Red</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Pink">Pink</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Yellow">Yellow</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Green">Green</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Black">Black</label>
+                  </div>
+                </div>
+                <button class="filters__show-more icon-plus">SHOW MORE</button>
+              </div>
+            </div>
+            <button class="accordion accordion__brand">Body Weight</button>
+            <div class="panel">
+              <div class="filters__number__wrapper">
+                <div class="filters__number__item">
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Ivory">Ivory</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Deep Grey">Deep Grey</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Coffee">Coffee</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Red">Red</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Pink">Pink</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Yellow">Yellow</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Green">Green</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Black">Black</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Green">Green</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Black">Black</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Lenovo">Lenovo</label>
+                  </div>
+                </div>
+                <button class="filters__show-more icon-plus">SHOW MORE</button>
+              </div>
+            </div>
+            <button class="accordion accordion__brand">CPU Cores </button>
+            <div class="panel">
+              <div class="filters__number__wrapper">
+                <div class="filters__number__item">
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Ivory">Ivory</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Coffee">Coffee</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Pink">Pink</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Green">Green</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Deep Grey">Deep Grey</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Red">Red</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Yellow">Yellow</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Black">Black</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Apple">Apple</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Asus">Asus</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Lenovo">Lenovo</label>
+                  </div>
+                </div>
+                <button class="filters__show-more icon-plus">SHOW MORE</button>
+              </div>
+            </div>
+            <button class="accordion accordion__color">CPU Type</button>
+            <div class="panel">
+              <div class="filters__number__wrapper">
+                <div class="filters__number__item">
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Ivory">Ivory</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Coffee">Coffee</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Pink">Pink</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Green">Green</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Deep Grey">Deep Grey</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Red">Red</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Yellow">Yellow</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Black">Black</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Apple">Apple</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Asus">Asus</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Lenovo">Lenovo</label>
+                  </div>
+                </div>
+                <button class="filters__show-more icon-plus">SHOW MORE</button>
+              </div>
+            </div>
+            <button class="accordion accordion__color">Screen Size</button>
+            <div class="panel">
+              <div class="filters__number__wrapper">
+                <div class="filters__number__item">
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Ivory">Ivory</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Coffee">Coffee</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Pink">Pink</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Green">Green</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Deep Grey">Deep Grey</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Red">Red</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Yellow">Yellow</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Black">Black</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Apple">Apple</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Asus">Asus</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Lenovo">Lenovo</label>
+                  </div>
+                </div>
+                <button class="filters__show-more icon-plus">SHOW MORE</button>
+              </div>
+            </div>
+            <button class="accordion accordion__color">Operation System</button>
+            <div class="panel">
+              <div class="filters__number__wrapper">
+                <div class="filters__number__item">
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Ivory">Ivory</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Coffee">Coffee</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Pink">Pink</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Green">Green</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Deep Grey">Deep Grey</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Red">Red</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Yellow">Yellow</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Black">Black</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Apple">Apple</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Asus">Asus</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Lenovo">Lenovo</label>
+                  </div>
+                </div>
+                <button class="filters__show-more icon-plus">SHOW MORE</button>
+              </div>
+            </div>
+            <button class="accordion accordion__brand">Cellular</button>
+            <div class="panel">
+              <div class="filters__number__wrapper">
+                <div class="filters__number__item">
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Ivory">Ivory</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Coffee">Coffee</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Pink">Pink</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Green">Green</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Deep Grey">Deep Grey</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Red">Red</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Yellow">Yellow</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Black">Black</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Apple">Apple</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Asus">Asus</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Lenovo">Lenovo</label>
+                  </div>
+                </div>
+                <button class="filters__show-more icon-plus">SHOW MORE</button>
+              </div>
+            </div>
+            <button class="accordion accordion__brand">Ram</button>
+            <div class="panel">
+              <div class="filters__number__wrapper">
+                <div class="filters__number__item">
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Ivory">Ivory</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Coffee">Coffee</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Pink">Pink</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Green">Green</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Deep Grey">Deep Grey</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Red">Red</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Yellow">Yellow</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Black">Black</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Apple">Apple</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Asus">Asus</label>
+                  </div>
+                  <div class="filters__number">
+                    <input type="checkbox">
+                    <label for="Lenovo">Lenovo</label>
+                  </div>
+                </div>
+                <button class="filters__show-more icon-plus">SHOW MORE</button>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+
+        <main>
+          <div class="main__top">
+            <div class="main__top__left">
+              <ul>
+                <li><a class="active" href="#">Popular products</a></li>
+                <li><a href="#">Low price</a></li>
+                <li><a href="#">High price</a></li>
+              </ul>
+            </div>
+            <div class="main__top__right">
+              <button class="active-btn icon-th"></button>
+              <button class="icon-list-small"></button>
+            </div>
+          </div>
+          <div class="main__content">
+            <a href="#">
+              <div class="main__content__card">
+                <div class="main__content__card__top__info">
+                  <div class="card__top__info__left">
+                    <span>SALE 10%</span>
+                  </div>
+                  <div class="card__top__info__right">
+                    <button class="icon-list-small"></button>
+                    <button class="icon-heart"></button>
+                  </div>
+                </div>
+                <div class="main__content__card__img">
+                  <img src="images/card-image1.jpg" alt="">
+                </div>
+                <div class="main__content__card__bottom__info">
+                  <div class="card__bottom__info__title">
+                    Asus ZenFone Go ZB452KG (black and white)
+                  </div>
+                  <div class="card__bottom__info__rating">
+                    <ul>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star-half"></li>
+                      <li class="icon-star-border"></li>
+                    </ul>
+                    <span>12</span>
+                  </div>
+                  <div class="card__bottom__info__price">
+                    <span>$ 384.4</span>
+                    <button class="icon-basket"></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="main__content__card">
+                <div class="main__content__card__top__info">
+                  <div class="card__top__info__left">
+                    <span>SALE 10%</span>
+                  </div>
+                  <div class="card__top__info__right">
+                    <button class="icon-list-small"></button>
+                    <button class="icon-heart"></button>
+                  </div>
+                </div>
+                <div class="main__content__card__img">
+                  <img src="images/card-image2.jpg" alt="">
+                </div>
+                <div class="main__content__card__bottom__info">
+                  <div class="card__bottom__info__title">
+                    Asus ZenFone Go ZB452KG (black and white)
+                  </div>
+                  <div class="card__bottom__info__rating">
+                    <ul>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star-half"></li>
+                      <li class="icon-star-border"></li>
+                    </ul>
+                    <span>12</span>
+                  </div>
+                  <div class="card__bottom__info__price">
+                    <span>$ 384.4</span>
+                    <button class="icon-basket"></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="main__content__card">
+                <div class="main__content__card__top__info">
+                  <div class="card__top__info__left">
+                    <span>SALE 10%</span>
+                  </div>
+                  <div class="card__top__info__right">
+                    <button class="icon-list-small"></button>
+                    <button class="icon-heart"></button>
+                  </div>
+                </div>
+                <div class="main__content__card__img">
+                  <img src="images/card-image3.jpg" alt="">
+                </div>
+                <div class="main__content__card__bottom__info">
+                  <div class="card__bottom__info__title">
+                    Asus ZenFone Go ZB452KG (black and white)
+                  </div>
+                  <div class="card__bottom__info__rating">
+                    <ul>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star-half"></li>
+                      <li class="icon-star-border"></li>
+                    </ul>
+                    <span>12</span>
+                  </div>
+                  <div class="card__bottom__info__price">
+                    <span>$ 384.4</span>
+                    <button class="icon-basket"></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="main__content__card">
+                <div class="main__content__card__top__info">
+                  <div class="card__top__info__left">
+                    <span>SALE 10%</span>
+                  </div>
+                  <div class="card__top__info__right">
+                    <button class="icon-list-small"></button>
+                    <button class="icon-heart"></button>
+                  </div>
+                </div>
+                <div class="main__content__card__img">
+                  <img src="images/card-image4.jpg" alt="">
+                </div>
+                <div class="main__content__card__bottom__info">
+                  <div class="card__bottom__info__title">
+                    Asus ZenFone Go ZB452KG (black and white)
+                  </div>
+                  <div class="card__bottom__info__rating">
+                    <ul>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star-half"></li>
+                      <li class="icon-star-border"></li>
+                    </ul>
+                    <span>12</span>
+                  </div>
+                  <div class="card__bottom__info__price">
+                    <span>$ 384.4</span>
+                    <button class="icon-basket"></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="main__content__card">
+                <div class="main__content__card__top__info">
+                  <div class="card__top__info__left">
+                    <span>SALE 10%</span>
+                  </div>
+                  <div class="card__top__info__right">
+                    <button class="icon-list-small"></button>
+                    <button class="icon-heart"></button>
+                  </div>
+                </div>
+                <div class="main__content__card__img">
+                  <img src="images/card-image5.jpg" alt="">
+                </div>
+                <div class="main__content__card__bottom__info">
+                  <div class="card__bottom__info__title">
+                    Asus ZenFone Go ZB452KG (black and white)
+                  </div>
+                  <div class="card__bottom__info__rating">
+                    <ul>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star-half"></li>
+                      <li class="icon-star-border"></li>
+                    </ul>
+                    <span>12</span>
+                  </div>
+                  <div class="card__bottom__info__price">
+                    <span>$ 384.4</span>
+                    <button class="icon-basket"></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="main__content__card">
+                <div class="main__content__card__top__info">
+                  <div class="card__top__info__left">
+                    <span>SALE 10%</span>
+                  </div>
+                  <div class="card__top__info__right">
+                    <button class="icon-list-small"></button>
+                    <button class="icon-heart"></button>
+                  </div>
+                </div>
+                <div class="main__content__card__img">
+                  <img src="images/card-image6.jpg" alt="">
+                </div>
+                <div class="main__content__card__bottom__info">
+                  <div class="card__bottom__info__title">
+                    Asus ZenFone Go ZB452KG (black and white)
+                  </div>
+                  <div class="card__bottom__info__rating">
+                    <ul>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star-half"></li>
+                      <li class="icon-star-border"></li>
+                    </ul>
+                    <span>12</span>
+                  </div>
+                  <div class="card__bottom__info__price">
+                    <span>$ 384.4</span>
+                    <button class="icon-basket"></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="main__content__card">
+                <div class="main__content__card__top__info">
+                  <div class="card__top__info__left">
+                    <span>SALE 10%</span>
+                  </div>
+                  <div class="card__top__info__right">
+                    <button class="icon-list-small"></button>
+                    <button class="icon-heart"></button>
+                  </div>
+                </div>
+                <div class="main__content__card__img">
+                  <img src="images/card-image7.jpg" alt="">
+                </div>
+                <div class="main__content__card__bottom__info">
+                  <div class="card__bottom__info__title">
+                    Asus ZenFone Go ZB452KG (black and white)
+                  </div>
+                  <div class="card__bottom__info__rating">
+                    <ul>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star-half"></li>
+                      <li class="icon-star-border"></li>
+                    </ul>
+                    <span>12</span>
+                  </div>
+                  <div class="card__bottom__info__price">
+                    <span>$ 384.4</span>
+                    <button class="icon-basket"></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="main__content__card">
+                <div class="main__content__card__top__info">
+                  <div class="card__top__info__left">
+                    <span>SALE 10%</span>
+                  </div>
+                  <div class="card__top__info__right">
+                    <button class="icon-list-small"></button>
+                    <button class="icon-heart"></button>
+                  </div>
+                </div>
+                <div class="main__content__card__img">
+                  <img src="images/card-image8.jpg" alt="">
+                </div>
+                <div class="main__content__card__bottom__info">
+                  <div class="card__bottom__info__title">
+                    Asus ZenFone Go ZB452KG (black and white)
+                  </div>
+                  <div class="card__bottom__info__rating">
+                    <ul>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star-half"></li>
+                      <li class="icon-star-border"></li>
+                    </ul>
+                    <span>12</span>
+                  </div>
+                  <div class="card__bottom__info__price">
+                    <span>$ 384.4</span>
+                    <button class="icon-basket"></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="main__content__card">
+                <div class="main__content__card__top__info">
+                  <div class="card__top__info__left">
+                    <span>SALE 10%</span>
+                  </div>
+                  <div class="card__top__info__right">
+                    <button class="icon-list-small"></button>
+                    <button class="icon-heart"></button>
+                  </div>
+                </div>
+                <div class="main__content__card__img">
+                  <img src="images/card-image9.jpg" alt="">
+                </div>
+                <div class="main__content__card__bottom__info">
+                  <div class="card__bottom__info__title">
+                    Asus ZenFone Go ZB452KG (black and white)
+                  </div>
+                  <div class="card__bottom__info__rating">
+                    <ul>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star"></li>
+                      <li class="icon-star-half"></li>
+                      <li class="icon-star-border"></li>
+                    </ul>
+                    <span>12</span>
+                  </div>
+                  <div class="card__bottom__info__price">
+                    <span>$ 384.4</span>
+                    <button class="icon-basket"></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="main__bottom">
+            <ul>
+              <li>
+                <a href="#">PREVIOUS PAGE</a>
+              </li>
+              <li>
+                <span>1</span>
+              </li>
+              <li>
+                <a href="#">NEXT PAGE</a>
+              </li>
+            </ul>
+          </div>
+        </main>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container__fluid">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__top__inner">
+            <div class="footer__top__logo">
+              <a href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="footer__top__buttons">
+              <ul>
+                <li>
+                  <button class="dropdown__shop dropdown">Shop <span class="icon-angle-down"></span></button>
+                  <ul id="dropdown-4">
+                    <li><button class="dropdown__shop">Shop 1</button></li>
+                    <li><button class="dropdown__shop">Shop 2</button></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Journal</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top__social">
+              <ul>
+                <li><a href="#" class="icon-fb"></a></li>
+                <li><a href="#" class="icon-tw"></a></li>
+                <li><a href="#" class="icon-inst"></a></li>
+                <li><a href="#" class="icon-ytb"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom__inner">
+            <div class="footer__bottom__left">
+              <span>&copy; 2016. Quantum UI kit</span>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+            </div>
+            <div class="footer__bottom__right">
+              <span>Accepted payment methods</span>
+              <ul>
+                <li><img src="images/visa.png" alt=""></li>
+                <li><img src="images/master-card.png" alt=""></li>
+                <li><img src="images/pay-pal.png" alt=""></li>
+                <li><img src="images/amazon.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup-login" id="modal">
+    <div class="popup-login__title">
+      Sing in
+    </div>
+    <form class="popup-login__form">
+      <label class="popup-login__name">
+        <input type="text" placeholder="Name">
+      </label>
+      <label class="popup-login__password">
+        <input type="password" placeholder="Password">
+      </label>
+      <div class="popup-login__btn">
+        <button>Submit</button>
+        <a class="popup-login__create" href="#">Creat An Account?</a>
+      </div>
+      <a class="popup-login__lost" href="#">Lost Password?</a>
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
