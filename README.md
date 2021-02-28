@@ -4,7 +4,7 @@
 
 ## https://vadimms.github.io/green-coffee-slim/build/
 
-## http://quantum-os.web.app
+## https://vadimms.github.io/quantum/app
 
 ## https://vadimms.github.io/foxtar-new/app
 
