@@ -6,6 +6,6 @@
 
 ## http://quantum-os.web.app
 
-## http://foxtar-new.web.app
+## https://vadimms.github.io/foxtar-new/app
 
 ## https://vadimms.github.io/rhythm
