@@ -8,4 +8,4 @@
 
 ## http://foxtar-new.web.app
 
-## http://thomas-rhythm.web.app
+## https://vadimms.github.io/rhythm
